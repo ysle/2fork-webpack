@@ -1,0 +1,1 @@
+console.log("Hello Peter !"),document.querySelector("#app").innerHTML=`${Math.random()}`;

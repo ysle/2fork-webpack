@@ -1,0 +1,31 @@
+{
+	"name": "2fork-webpack",
+	"version": "0.0.0",
+	"description": "",
+	"scripts": {
+		"start": "webpack serve --content-base docs --watch-content-base",
+		"build": "webpack --mode production -o docs",
+		"preversion": "npm run lint",
+		"version": "npm run build && git add -A docs",
+		"postversion": "git push && git push --tags",
+		"lint": "prettier --check src"
+	},
+	"homepage": "https://github.com/ysle/2fork-webpack#readme",
+	"devDependencies": {
+		"prettier": "^2.1.2",
+		"webpack": "^5.6.0",
+		"webpack-cli": "^4.2.0",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4,
+		"semi": false,
+		"singleQuote": true,
+		"bracketSpacing": true,
+		"arrowParens": "avoid",
+		"printWidth": 300,
+		"trailingComma": "none"
+	},
+	"dependencies": {}
+}

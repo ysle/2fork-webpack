@@ -1,0 +1,1 @@
+A minimalistic webpack 5 based project seed 2 fork.
